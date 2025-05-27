@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dhara.Accountant.MakeABillSceneController">
+   <children>
+      <ComboBox fx:id="medicineQuantityComboBox" layoutX="283.0" layoutY="136.0" prefHeight="31.0" prefWidth="104.0" promptText="qty" />
+      <ComboBox fx:id="treatmentQuantityComboBox" layoutX="283.0" layoutY="178.0" prefHeight="31.0" prefWidth="104.0" promptText="qty" />
+      <ComboBox fx:id="treatmentComboBox" layoutX="26.0" layoutY="178.0" onAction="#onClickTreatmentComboBox" prefHeight="31.0" prefWidth="170.0" promptText="choose treatment" />
+      <ComboBox fx:id="medicineComboBox" layoutX="26.0" layoutY="136.0" onAction="#onClickMedsComboBox" prefHeight="31.0" prefWidth="170.0" promptText="choose medicine" />
+      <Button layoutX="401.0" layoutY="136.0" mnemonicParsing="false" onAction="#addMedicineOnClick" prefHeight="31.0" prefWidth="155.0" text="add" />
+      <Button layoutX="245.0" layoutY="324.0" mnemonicParsing="false" onAction="#addBillOnClick" prefHeight="35.0" prefWidth="309.0" text="Add BILL" wrapText="true" />
+      <Button layoutX="401.0" layoutY="178.0" mnemonicParsing="false" onAction="#onClickAddTreatmentButton" prefHeight="31.0" prefWidth="155.0" text="add" />
+      <DatePicker fx:id="DueByDatePicker" layoutX="37.0" layoutY="326.0" prefHeight="31.0" prefWidth="187.0" promptText="datedue" />
+      <Label fx:id="medicinePriceLabel" layoutX="208.0" layoutY="141.0" text="price" />
+      <Label fx:id="treatmentPriceLabel" layoutX="208.0" layoutY="183.0" text="price" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="Back" />
+      <Label layoutX="224.0" layoutY="35.0" text="CREATE BILL">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="323.0" layoutY="99.0" text="Qty" />
+      <Label fx:id="updateStatus" layoutX="34.0" layoutY="229.0" prefHeight="61.0" prefWidth="142.0" wrapText="true" />
+      <Line endX="-91.0" endY="274.0" layoutX="123.0" layoutY="27.0" startX="435.0" startY="274.0" />
+      <Label layoutX="208.0" layoutY="99.0" text="Price" />
+      <Label fx:id="totalOutputTextField" layoutX="195.0" layoutY="231.0" prefHeight="61.0" prefWidth="93.0" text="Total shown here" wrapText="true" />
+      <ComboBox fx:id="patientIdComboBox" layoutX="26.0" layoutY="70.0" prefHeight="31.0" prefWidth="170.0" promptText="Patient ID" />
+      <Button layoutX="372.0" layoutY="246.0" mnemonicParsing="false" onAction="#showTotalOnClick" text="Show total" />
+   </children>
+</AnchorPane>
