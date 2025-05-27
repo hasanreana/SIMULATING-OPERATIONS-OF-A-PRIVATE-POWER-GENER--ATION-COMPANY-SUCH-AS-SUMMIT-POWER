@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dhara.Nurse.PatientInfoPdfController">
+   <children>
+      <TableView fx:id="patientTableView" layoutX="91.0" layoutY="151.0" prefHeight="200.0" prefWidth="378.0">
+        <columns>
+          <TableColumn fx:id="IdTableColoumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="NameTableColoumn" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="genderTableColoumn" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="DOBTableColoumn" prefWidth="75.0" text="DOB" />
+            <TableColumn fx:id="emailTableColoumn" prefWidth="75.0" text="email" />
+        </columns>
+      </TableView>
+      <Button layoutX="239.0" layoutY="103.0" mnemonicParsing="false" onAction="#onClickMakePdf" text="Make pdf" />
+      <Label layoutX="114.0" layoutY="54.0" prefHeight="35.0" prefWidth="354.0" text="VIEW PATIENT INFORMATION">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

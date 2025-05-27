@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dhara.Nurse.AddFeedbackNurseController">
+   <children>
+      <TextArea fx:id="feedbackTextArea" layoutX="132.0" layoutY="141.0" prefHeight="200.0" prefWidth="304.0" promptText="Enter feedback here. This is completely annonymous." />
+      <Button layoutX="474.0" layoutY="300.0" mnemonicParsing="false" onAction="#addButtonOnClick" text="Add" />
+      <Label layoutX="187.0" layoutY="49.0" text="ADD FEEDBACK">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="80.0" prefHeight="61.0" prefWidth="355.0" text="Add your feedback regarding BD Eye Hospital here. This is completely annonymous." wrapText="true" />
+   </children>
+</AnchorPane>
